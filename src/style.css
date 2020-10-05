@@ -1,0 +1,12 @@
+body {
+  background-color:#3FAF82;
+}
+
+
+.content {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}

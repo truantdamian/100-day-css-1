@@ -1,0 +1,120 @@
+.hamburger-button {
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  height:150px;
+  width:150px;
+  cursor:pointer;
+}
+
+.hamburger-line {
+  background-color:#fff;
+  height:20px;
+  width:100%;
+  border-radius:5px;
+  -webkit-box-shadow: 6px 4px 5px 0px rgba(35,138,95,1);
+  -moz-box-shadow: 6px 4px 5px 0px rgba(35,138,95,1);
+  box-shadow: 6px 4px 5px 0px rgba(35,138,95,1);
+}
+
+
+.hamburger-line-top-animate {
+  animation-name: top-animate;
+  animation-direction: normal;
+  animation-duration: .5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+
+.hamburger-line-top-init {
+  animation-name: top-animate-undo;
+  animation-direction: reverse;
+  animation-duration: .5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.hamburger-line-bottom-animate {
+  animation-name: bottom-animate;
+  animation-direction: normal;
+  animation-duration: .5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.hamburger-line-bottom-init {
+  animation-name: bottom-animate-undo;
+  animation-direction: reverse;
+  animation-duration: .5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+
+.hamburger-line-middle-animate {
+  animation-name: middle-animate;
+  animation-direction: normal;
+  animation-duration: .5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.hamburger-line-middle-init {
+  animation-name: middle-animate-undo;
+  animation-direction: reverse;
+  animation-duration: .5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes top-animate {
+  50% {
+     transform: translateY(65px);
+  }
+  100%{
+    transform: translateY(65px) rotate(135deg);
+  }
+}
+
+@keyframes top-animate-undo {
+  50% {
+     transform: translateY(65px);
+  }
+  100%{
+    transform: translateY(65px) rotate(135deg);
+  }
+}
+
+
+
+@keyframes bottom-animate {
+  50% {
+     transform: translateY(-65px);
+  }
+  100%{
+    transform: translateY(-65px) rotate(45deg);
+  }
+} 
+
+@keyframes bottom-animate-undo {
+  50% {
+     transform: translateY(-65px);
+  }
+  100%{
+    transform: translateY(-65px) rotate(45deg);
+  }
+}
+
+
+@keyframes middle-animate {
+  100%{
+    transform: scale(0);
+  }
+} 
+
+@keyframes middle-animate-undo {
+  100%{
+    transform: scale(0);
+  }
+}
